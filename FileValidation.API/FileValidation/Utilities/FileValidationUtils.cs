@@ -45,7 +45,7 @@ namespace FileValidation.API.FileValidation.Utilities
                     //To handle outlook .msg file 
                     if ((new string[] { ".MSG" }).Contains(fileExtension.ToUpper()))
                     {
-                        mimeType = "APPLICATION/MSWORD";
+                        mimeType = "APPLICATION/VND.MS";
                     }
 
 
@@ -88,7 +88,7 @@ namespace FileValidation.API.FileValidation.Utilities
                     //actual contentType = "APPLICATION/VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.DOCUMENT";
                     contentType = "APPLICATION/VND.OPENXMLFORMATS-OFFICEDOCUMENT";
                     break;
-                case "D0-CF-11-E0": //.doc , .xls
+                case "D0-CF-11-E0": //.doc, .xls, .msg
                     contentType = "APPLICATION/VND.MS";
                     break;
 
